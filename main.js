@@ -325,29 +325,32 @@ const btn = document.getElementById("btn");
 const result = document.getElementById("result");
 const addon = document.getElementById("addon");
 
-const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
-const randomPlant = plants[Math.floor(Math.random() * plants.length)];
-const randomElement = elements[Math.floor(Math.random() * elements.length)];
-const randomRock = rocks[Math.floor(Math.random() * rocks.length)];
-const randomEnvironment = environments[Math.floor(Math.random() * environments.length)];
-const randomWeapon = weapons[Math.floor(Math.random() * weapons.length)];
-const randomEquipment = equipmentItems[Math.floor(Math.random() * equipmentItems.length)];
-const randomTool = tools[Math.floor(Math.random() * tools.length)];
-const randomPersonality = personalities[Math.floor(Math.random() * personalities.length)];
-
-const defaultResults = ['<b>' + randomAnimal + '</b>' + " mixed with " + '<b>' + randomPlant + '</b>' + " made out of " + '<b>' + randomElement + '</b>' + " and " + '<b>' + randomRock + '</b>'];
-const addOns = [
-    '<ul class="list-group">' +
-    '<li class="list-group-item">' + '<b>Environment: </b>' + randomEnvironment + '</li>' +
-    '<li class="list-group-item">' + '<b>Weapon: </b>' + randomWeapon + '</li>' + 
-    '<li class="list-group-item">' + '<b>Equipment: </b>' + randomEquipment + '</li>'+ 
-    '<li class="list-group-item">' + '<b>Tool: </b>' + randomTool + '</li>' + 
-    '<li class="list-group-item">' + '<b>Personality Type: </b>' + randomPersonality + '</li>' +
-    '</ul>'
-]
 btn.addEventListener('click', getResult);
 
+
 function getResult() {
+    const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+    const randomPlant = plants[Math.floor(Math.random() * plants.length)];
+    const randomElement = elements[Math.floor(Math.random() * elements.length)];
+    const randomRock = rocks[Math.floor(Math.random() * rocks.length)];
+    const randomEnvironment = environments[Math.floor(Math.random() * environments.length)];
+    const randomWeapon = weapons[Math.floor(Math.random() * weapons.length)];
+    const randomEquipment = equipmentItems[Math.floor(Math.random() * equipmentItems.length)];
+    const randomTool = tools[Math.floor(Math.random() * tools.length)];
+    const randomPersonality = personalities[Math.floor(Math.random() * personalities.length)];
+
+    const defaultResults = ['<b>' + randomAnimal + '</b>' + " mixed with " + '<b>' + randomPlant + '</b>' + " made out of " + '<b>' + randomElement + '</b>' + " and " + '<b>' + randomRock + '</b>'];
+    const addOns = [
+        '<ul class="list-group">' +
+        '<li class="list-group-item">' + '<b>Environment: </b>' + randomEnvironment + '</li>' +
+        '<li class="list-group-item">' + '<b>Weapon: </b>' + randomWeapon + '</li>' + 
+        '<li class="list-group-item">' + '<b>Equipment: </b>' + randomEquipment + '</li>'+ 
+        '<li class="list-group-item">' + '<b>Tool: </b>' + randomTool + '</li>' + 
+        '<li class="list-group-item">' + '<b>Personality Type: </b>' + randomPersonality + '</li>' +
+        '</ul>'
+    ]
+
+
     if (defaultResults){
         result.innerHTML = '<span>A(n) </span>' + defaultResults;
         addon.innerHTML = '<h3>Optional Things to Consider Adding: </h3>' + addOns;
