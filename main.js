@@ -32,7 +32,7 @@ const animals = [
     "Dragonfly",
     "Lotus",
     "Mantis",
-    "Bee, Wasp",
+    "Bee / Wasp",
     "Caterpillar",
     "Beetle / Scarab",
     "Flea, Mite",

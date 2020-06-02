@@ -1,0 +1,18 @@
+body {
+    background-color: #dfddc7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+h1, h2{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+#btn{
+    background-color: #211717;
+}
+
+.list-group-item{
+    background-color: #f58b54;
+}
